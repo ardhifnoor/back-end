@@ -12,6 +12,16 @@ Router.get('/karyawan', (req, res)=>{
     ])
 })
 
+Router.get('/user', (req, res)=>{
+    res.send([
+        { username : 'Andi', password : 'adminpass'},
+        { username : 'Budi', password : 'adminpass'},
+        { username : 'Caca', password : 'adminpass'},
+        { username : 'Dedi', password : 'adminpass'},
+        { username : 'Endo', password : 'adminpass'}        
+    ])
+})
+
 module.exports = Router
 
 

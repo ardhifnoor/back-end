@@ -22,6 +22,12 @@ Router.get('/user', (req, res)=>{
     ])
 })
 
+Router.get('/user/:id', (req, res)=>{
+    res.send(
+        { username : 'Andi', password : 'adminpass'}
+    )
+})
+
 module.exports = Router
 
 

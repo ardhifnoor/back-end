@@ -2,6 +2,8 @@ const bodyParser    = require('body-parser')
 const cors          = require('cors')
 const express       = require('express')
 
+const config        = require('./config')
+
 const app = express()
 
 app.use(cors())
@@ -12,6 +14,6 @@ app.use('*', (req, res)=>{
     res.send('Not Found')
 })
 
-app.listen(3000, ()=>{
-    console.log('App started using port :', 3000)
+app.listen(config.app.port, ()=>{
+    console.log('App started using port :', config.app.port)
 })

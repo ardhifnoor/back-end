@@ -12,6 +12,12 @@ Router.get('/karyawan', (req, res)=>{
     ])
 })
 
+Router.get('/karyawan/:id', (req, res)=>{
+    res.send(
+        { nama : 'Andi', usia : 20}
+    )
+})
+
 Router.get('/user', (req, res)=>{
     res.send([
         { username : 'Andi', password : 'adminpass'},

@@ -17,6 +17,7 @@ app.use('*', (req, res)=>{
     res.send('Not Found')
 })
 
-app.listen(config.app.port, ()=>{
-    console.log('App started using port :', config.app.port)
+let port = process.env.PORT || config.app.port
+app.listen(port, ()=>{
+    console.log('App started using port :', port)
 })

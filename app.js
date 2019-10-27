@@ -3,6 +3,7 @@ const cors          = require('cors')
 const express       = require('express')
 
 const config        = require('./config')
+const v1            = require('./routes/v1')
 
 const app = express()
 

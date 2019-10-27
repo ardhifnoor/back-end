@@ -8,7 +8,8 @@ Router.get('/karyawan', (req, res)=>{
         { nama : 'Budi', usia : 21},
         { nama : 'Caca', usia : 23},
         { nama : 'Dedi', usia : 25},
-        { nama : 'Endo', usia : 28}        
+        { nama : 'Endo', usia : 28},
+        { nama : 'Fara', usia : 34}
     ])
 })
 
